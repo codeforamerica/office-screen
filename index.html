@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--
-	
-	    Immediately redirect to Tweetbeam.
-	
-	-->
-	<meta http-equiv="refresh" content="0; url=tweetbeam.html" />
-	<meta charset="utf-8" />
-	<title>Code for America Office Screens</title>
-</head>
-<body>
-    Redirecting you to <a href="tweetbeam.html">tweetbeam</a>…
-</body>
+     <head>
+        <title>Code for America Office Screens</title>
+        <script type="text/javascript">
+           var urls = [
+              "http://www.tweetbeam.com/show?query=codeforamerica",
+              "http://project-monitor.codeforamerica.org/",
+           ];
+
+           function showUrl(idx) {
+              var f = document.getElementById("f");
+
+              // Call the next load after 5 minutes only after
+              // this iframe loads
+              f.onload = function() {
+                 var next = ++idx % urls.length;
+                 setTimeout(function(){
+                    showUrl(next);
+                 }, 300000);
+              }
+              // set the src
+              f.src = urls[idx];
+           }
+
+        </script>
+    </head>
+    <body onload="showUrl(0)" class="app-chrome">
+        <iframe id="f" src="about:blank"  style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
+    </body>
 </html>
