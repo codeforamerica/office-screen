@@ -10,4 +10,5 @@ These are them.
 Contributing
 ----
 
-Pull requests welcome. The URLs to rotate are listed at the top of index.html.
+Pull requests welcome. Generally each file here is a simple HTML frameset
+with a refresh tag for rotation.
