@@ -5,6 +5,7 @@
         return sprintf('%s-W%s', date('Y', $time), date('W', $time));
     }
 
+    // GDocs spreadsheet with current kitchen data.
     $csv_url = 'https://docs.google.com/a/codeforamerica.org/spreadsheets/d/1XvhA5LC2BBVtgxFVwR0RkX3bbV3nT-fjtyyrd_uOFzg/export?format=csv&id=1XvhA5LC2BBVtgxFVwR0RkX3bbV3nT-fjtyyrd_uOFzg&gid=0';
     
     date_default_timezone_set('America/Los_Angeles');
@@ -15,12 +16,15 @@
 
     if($fp = @fopen($csv_url, 'r'))
     {
+        // Iterate over each row of the CSV file, with row number in $row.
         for($row = 0; $values = fgetcsv($fp); $row++)
         {
             if($row == 0 && $values[0] != 'Data Point') {
+                // Bail out if cell [0, 0] doesn't say "Data Point"
                 exit(1);
 
             } elseif($row == 1) {
+                // Make an array for each week, in reverse-chronological order.
                 for($v = 1; $v < count($values); $v++)
                 {
                     $week = array(
@@ -34,8 +38,10 @@
                 }
             
             } elseif($row >= 2) {
+                // Note the label from the first column.
                 $labels[] = $values[0];
             
+                // Populate values for each week.
                 for($w = 0, $v = 1; $v < count($values); $w++, $v++)
                 {
                     if($weeks[$w])
@@ -47,6 +53,7 @@
         }
     }
     
+    // Note the current week.
     $week = $weeks[0];
     $values = $week['values'];
     
