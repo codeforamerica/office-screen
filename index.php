@@ -1,3 +1,56 @@
+<?php
+
+    function format_week($time)
+    {
+        return sprintf('%s-W%s', date('Y', $time), date('W', $time));
+    }
+
+    $csv_url = 'https://docs.google.com/a/codeforamerica.org/spreadsheets/d/1XvhA5LC2BBVtgxFVwR0RkX3bbV3nT-fjtyyrd_uOFzg/export?format=csv&id=1XvhA5LC2BBVtgxFVwR0RkX3bbV3nT-fjtyyrd_uOFzg&gid=0';
+    
+    date_default_timezone_set('America/Los_Angeles');
+    
+    $now = format_week(time());
+    $labels = array();
+    $weeks = array();
+
+    if($fp = @fopen($csv_url, 'r'))
+    {
+        for($row = 0; $values = fgetcsv($fp); $row++)
+        {
+            if($row == 0 && $values[0] != 'Data Point') {
+                exit(1);
+
+            } elseif($row == 1) {
+                for($v = 1; $v < count($values); $v++)
+                {
+                    $week = array(
+                        'label' => $values[$v],
+                        'week' => format_week(strtotime($values[$v])),
+                        'values' => array()
+                        );
+                    
+                    if($week['week'] < $now)
+                        array_unshift($weeks, $week);
+                }
+            
+            } elseif($row >= 2) {
+                $labels[] = $values[0];
+            
+                for($w = 0, $v = 1; $v < count($values); $w++, $v++)
+                {
+                    if($weeks[$w])
+                    {
+                        $weeks[$w]['values'][$values[0]] = $values[$v];
+                    }
+                }
+            }
+        }
+    }
+    
+    $week = $weeks[0];
+    $values = $week['values'];
+    
+?>
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -28,53 +81,53 @@
             <div class="bigstats fruit">
                 <h2>Food</h2>
                 <ul>
-                    <li><span class="value">564</span> bananas eaten</li>
-                    <li><span class="value">23</span> pounds of Hot Tomales chomped</li>
-                    <li><span class="value">15</span> oranges squeezed</li>
+                    <li><span class="value"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
+                    <li><span class="value"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
+                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> oranges squeezed</li>
                 </ul>
             </div>
             
             <div class="bigstats beverages">
                 <h2>Beverages</h2>
                 <ul>
-                    <li><span class="value">1587</span> cups of coffee made</li>
-                    <li><span class="value">13</span> gallons of milk consumed</li>
-                    <li><span class="value">157</span> cups of decaf made</li>
+                    <li><span class="value"><?= $values['# of cups of regular coffee brewed'] ?></span> cups of coffee made</li>
+                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
+                    <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
             </div>
 
             <div class="bigstats office">
                 <h2>Office</h2>
                 <ul>
-                    <li><span class="value">12</span> InstaCart deliveries</li>
-                    <li><span class="value">13</span> gallons of milk consumed</li>
-                    <li><span class="value">157</span> cups of decaf made</li>
+                    <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> InstaCart deliveries</li>
+                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
+                    <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
             </div>
            <div class="bigstats fruit">
                 <h2>Food</h2>
                 <ul>
-                    <li><span class="value">564</span> bananas eaten</li>
-                    <li><span class="value">23</span> pounds of Hot Tomales chomped</li>
-                    <li><span class="value">15</span> oranges squeezed</li>
+                    <li><span class="value"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
+                    <li><span class="value"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
+                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> oranges squeezed</li>
                 </ul>
             </div>
             
             <div class="bigstats beverages">
                 <h2>Beverages</h2>
                 <ul>
-                    <li><span class="value">1587</span> cups of coffee made</li>
-                    <li><span class="value">13</span> gallons of milk consumed</li>
-                    <li><span class="value">157</span> cups of decaf made</li>
+                    <li><span class="value"><?= $values['# of cups of regular coffee brewed'] ?></span> cups of coffee made</li>
+                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
+                    <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
             </div>
 
             <div class="bigstats office">
                 <h2>Office</h2>
                 <ul>
-                    <li><span class="value">12</span> InstaCart deliveries</li>
-                    <li><span class="value">13</span> gallons of milk consumed</li>
-                    <li><span class="value">157</span> cups of decaf made</li>
+                    <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> InstaCart deliveries</li>
+                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
+                    <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
             </div>
            
