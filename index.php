@@ -76,7 +76,7 @@
             <li><a href="history.html">History</a></li>
         </ul-->
 
-        <table>
+        <table width="100%">
         <tr>
             <td class="bigstats fruit">
                 <h2>Food</h2>
@@ -133,8 +133,8 @@
                 </ul>
             </td>
         </tr>
-        <tr colspan="3">
-            <td class="warzone">
+        <tr>
+            <td class="warzone" colspan="3">
                 <h2>Days kitchen has been declared a disaster zone:</h2>
                 <p>14</p>
             </td>

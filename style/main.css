@@ -13,9 +13,8 @@ h1 span{
 	font-size:0.75em;
 }
 .bigstats{
-	width:33.3%;
+	width:33%;
 	color:#fff;
-	float:left;
 }
 .fruit{
 	background-color:#004b6a;
@@ -45,6 +44,7 @@ h1 span{
 	padding-bottom:7.5em;
 	padding-top:1em;
 	clear:both;
+
 }
 .warzone h2{
 	margin:0;
