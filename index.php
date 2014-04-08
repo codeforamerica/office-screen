@@ -79,30 +79,29 @@
         <table width="100%" cellpadding=0 cellspacing=0 border=0>
         <tr>
             <td class="bigstats fruit">
-                <h2>Food</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
                     <li><span class="value"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
                     <li><span class="value"><?= $values['# of oranges consumed'] ?></span> oranges squeezed</li>
                     <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of grapes plucked</li>
-                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of strawberries scoffed</li>
-                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of apples eaten</li>
-                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> string cheeses unstrung</li>
+                    
                 </ul>
             </td>
             
             <td class="bigstats beverages">
-                <h2>Beverages</h2>
                 <ul>
+                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of strawberries scoffed</li>
+                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of apples eaten</li>
+                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> string cheeses unstrung</li>
                     <li><span class="value"><?= $values['# of cups of regular coffee brewed'] ?></span> cups of coffee made</li>
-                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
-                    <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
             </td>
 
             <td class="bigstats office">
-                <h2>Office</h2>
                 <ul>
+
+                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
+                    <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> InstaCart deliveries</li>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> dishwasher cycles</li>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> CfA catered meals</li>
