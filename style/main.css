@@ -1,0 +1,59 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"Lucida Console", Monaco, monospace;
+}
+h1{
+	background-color:#e5e5e5;
+	padding:1em;
+	font-size:1em;
+	margin:0;
+}
+h1 span{
+	font-size:0.75em;
+}
+.bigstats{
+	width:33.3%;
+	color:#fff;
+	float:left;
+}
+.fruit{
+	background-color:#004b6a;
+}
+.beverages{
+	background-color:#399fd3;
+}
+.office{
+	background-color:#7ab5d6;
+	color:#000;
+}
+.bigstats h2{
+	text-align:center;
+}
+.value{
+	font-size:2em;
+}
+.bigstats li{
+	list-style-type:none;
+}
+.warzone{
+	background-color:#000;
+	color:#fff;
+	text-align:center;
+	background-image:url(http://registry.gimp.org/files/Flamesexample.gif);
+	background-position:bottom left;
+	padding-bottom:7.5em;
+	padding-top:1em;
+	clear:both;
+}
+.warzone h2{
+	margin:0;
+	padding:0em 0.5em;
+}
+.warzone p{
+	font-size:3em;
+	font-weight:bold;
+	margin:0;
+	padding:0.2em 0;
+
+}
