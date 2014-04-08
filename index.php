@@ -76,69 +76,71 @@
             <li><a href="history.html">History</a></li>
         </ul-->
 
-        <div class="layout-breve">
-    
-            <div class="bigstats fruit">
+        <table>
+        <tr>
+            <td class="bigstats fruit">
                 <h2>Food</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
                     <li><span class="value"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
                     <li><span class="value"><?= $values['# of oranges consumed'] ?></span> oranges squeezed</li>
                 </ul>
-            </div>
+            </td>
             
-            <div class="bigstats beverages">
+            <td class="bigstats beverages">
                 <h2>Beverages</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of cups of regular coffee brewed'] ?></span> cups of coffee made</li>
                     <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
                     <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
-            </div>
+            </td>
 
-            <div class="bigstats office">
+            <td class="bigstats office">
                 <h2>Office</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> InstaCart deliveries</li>
                     <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
                     <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
-            </div>
-           <div class="bigstats fruit">
+            </td>
+        </tr>
+        <tr>
+           <td class="bigstats fruit">
                 <h2>Food</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
                     <li><span class="value"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
                     <li><span class="value"><?= $values['# of oranges consumed'] ?></span> oranges squeezed</li>
                 </ul>
-            </div>
+            </td>
             
-            <div class="bigstats beverages">
+            <td class="bigstats beverages">
                 <h2>Beverages</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of cups of regular coffee brewed'] ?></span> cups of coffee made</li>
                     <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
                     <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
-            </div>
+            </td>
 
-            <div class="bigstats office">
+            <td class="bigstats office">
                 <h2>Office</h2>
                 <ul>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> InstaCart deliveries</li>
                     <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
                     <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                 </ul>
-            </div>
-           
-            <div class="warzone">
+            </td>
+        </tr>
+        <tr colspan="3">
+            <td class="warzone">
                 <h2>Days kitchen has been declared a disaster zone:</h2>
                 <p>14</p>
-            </div>
+            </td>
+        </tr>
 
-
-
-        </div>
+        </table>
 
      
         
