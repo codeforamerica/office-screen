@@ -63,7 +63,7 @@
         <title>CFA Dashboard</title>
     </head>    
     <body>
-        <h1>Code for America - Kitchen Stories <span>Last updated on 4th April 2014 at 14:45</h1>
+        <h1>Code for America - Kitchen Stories <span>Last updated on <?= date('F jS Y, g:ia') ?></h1>
         <!--nav class="nav-tabs" role="navigation">
             <ul class="layout-semibreve layout-tight">
                 <li class="nav-tab"><a class="nav-tab-link" href="edit.html">English</a></li>
