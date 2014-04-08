@@ -15,22 +15,20 @@ h1 span{
 .bigstats{
 	width:33%;
 	color:#fff;
-}
-.fruit{
-	background-color:#004b6a;
-}
-.beverages{
 	background-color:#399fd3;
 }
-.office{
-	background-color:#7ab5d6;
-	color:#000;
-}
+
 .bigstats h2{
 	text-align:center;
 }
 .value{
 	font-size:2em;
+	height:64px;
+	width:64px;
+	display:inline-block;
+	text-align:center;
+	padding-top:0.5em;
+	background-repeat:no-repeat;
 }
 .bigstats li{
 	list-style-type:none;

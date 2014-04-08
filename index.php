@@ -87,18 +87,18 @@
         <tr>
             <td class="bigstats fruit">
                 <ul>
-                    <li><span class="value"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
-                    <li><span class="value"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
+                    <li><span class="value" style="background-image:url('../style/food-icons/png/64 px/7.png')"><?= $values['# of bananas consumed'] ?></span> bananas eaten</li>
+                    <li><span class="value" style="background-image:url('../style/food-icons/png/64 px/35.png')"><?= $values['Pounds of Hot Tamales consumed'] ?></span> pounds of Hot Tomales chomped</li>
                     <li><span class="value"><?= $values['# of oranges consumed'] ?></span> oranges squeezed</li>
-                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of grapes plucked</li>
+                    <li><span class="value"><?= $values['# of pears consumed'] ?></span> pears paired</li>
                     
                 </ul>
             </td>
             
             <td class="bigstats beverages">
                 <ul>
-                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of strawberries scoffed</li>
-                    <li><span class="value"><?= $values['# of oranges consumed'] ?></span> pounds of apples eaten</li>
+                    <li><span class="value" style="background-image:url('../style/food-icons/png/64 px/24.png')"><?= $values['# of oranges consumed'] ?></span> pounds of strawberries scoffed</li>
+                    <li><span class="value" style="background-image:url('../style/food-icons/png/64 px/2.png');"><?= $values['# of oranges consumed'] ?></span> pounds of apples eaten</li>
                     <li><span class="value"><?= $values['# of oranges consumed'] ?></span> string cheeses unstrung</li>
                     <li><span class="value"><?= $values['# of cups of regular coffee brewed'] ?></span> cups of coffee made</li>
                 </ul>
@@ -107,11 +107,11 @@
             <td class="bigstats office">
                 <ul>
 
-                    <li><span class="value"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
+                    <li><span class="value" style="background-image:url('../style/food-icons/png/64 px/196.png')"><?= $values['# of gallons of milk (2%) consumed'] ?></span> gallons of milk consumed</li>
                     <li><span class="value"><?= $values['# of cups of decaf coffee brewed'] ?></span> cups of decaf made</li>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> InstaCart deliveries</li>
                     <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> dishwasher cycles</li>
-                    <li><span class="value"><?= $values['# of Instacart deliveries'] ?></span> CfA catered meals</li>
+                    <li><img src="../style/food-icons/png/64 px/8.png" /> <span class="value"><?= $values['# of Instacart deliveries'] ?></span> CfA catered meals</li>
                 </ul>
             </td>
         </tr>
