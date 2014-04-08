@@ -29,6 +29,7 @@ h1 span{
 	text-align:center;
 	padding-top:0.5em;
 	background-repeat:no-repeat;
+	font-weight:bold;
 }
 .bigstats li{
 	list-style-type:none;
