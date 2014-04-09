@@ -42,7 +42,7 @@
                 $labels[] = $values[0];
             
                 // Populate values for each week.
-                for($w = 0, $v = 1; $v < count($values); $w++, $v++)
+                for($v = 1, $w = count($weeks) - 1; $v < count($values); $v++, $w--)
                 {
                     if($weeks[$w])
                     {
