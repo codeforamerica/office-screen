@@ -46,7 +46,7 @@
                 {
                     if($weeks[$w])
                     {
-                        $weeks[$w]['values'][$values[0]] = $values[$v];
+                        $weeks[$w]['values'][$values[0]] = ($values[$v] == '') ? 'No' : $values[$v];
                     }
                 }
             }
