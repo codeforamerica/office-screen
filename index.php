@@ -24,7 +24,9 @@
         // Iterate over each row of the CSV file, with row number in $row.
         for($row = 0; $values = fgetcsv($fp); $row++)
         {
-            if($row == 0 && $values[0] != 'Data Point') {
+            $row_label = $values[0];
+
+            if($row == 0 && $row_label != 'Data Point') {
                 // Bail out if cell [0, 0] doesn't say "Data Point"
                 exit(1);
 
@@ -43,15 +45,12 @@
                 }
             
             } elseif($row >= 2) {
-                // Note the label from the first column.
-                $labels[] = $values[0];
-            
                 // Populate values for each week.
                 for($v = 1, $w = count($weeks) - 1; $v < count($values); $v++, $w--)
                 {
                     if($weeks[$w])
                     {
-                        $weeks[$w]['values'][$values[0]] = $values[$v];
+                        $weeks[$w]['values'][$row_label] = $values[$v];
                     }
                 }
             }
