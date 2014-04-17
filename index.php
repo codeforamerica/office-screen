@@ -38,7 +38,7 @@
                         'values' => array()
                         );
                     
-                    if($week['week'] < $now)
+                    if($week['week'] <= $now)
                         array_unshift($weeks, $week);
                 }
             
