@@ -7,7 +7,13 @@
     
     function yesno($value)
     {
-        return (is_null($value) || $value == '') ? 'No' : $value;
+        if(is_null($value))
+            return 'No';
+        
+        if($value > 1000)
+            return sprintf('%.1fk', $value / 1000);
+        
+        return $value;
     }
 
     // GDocs spreadsheet with current kitchen data.
@@ -16,15 +22,15 @@
     date_default_timezone_set('America/Los_Angeles');
     
     $now = format_week(time());
-    $labels = array();
+    $values = array();
     $weeks = array();
 
     if($fp = @fopen($csv_url, 'r'))
     {
         // Iterate over each row of the CSV file, with row number in $row.
-        for($row = 0; $values = fgetcsv($fp); $row++)
+        for($row = 0; $row_cells = fgetcsv($fp); $row++)
         {
-            $row_label = $values[0];
+            $row_label = $row_cells[0];
 
             if($row == 0 && $row_label != 'Data Point') {
                 // Bail out if cell [0, 0] doesn't say "Data Point"
@@ -32,11 +38,11 @@
 
             } elseif($row == 1) {
                 // Make an array for each week, in reverse-chronological order.
-                for($v = 1; $v < count($values); $v++)
+                for($v = 1; $v < count($row_cells); $v++)
                 {
                     $week = array(
-                        'label' => $values[$v],
-                        'week' => format_week(strtotime($values[$v])),
+                        'label' => $row_cells[$v],
+                        'week' => format_week(strtotime($row_cells[$v])),
                         'values' => array()
                         );
                     
@@ -46,20 +52,17 @@
             
             } elseif($row >= 2) {
                 // Populate values for each week.
-                for($v = 1, $w = count($weeks) - 1; $v < count($values); $v++, $w--)
+                for($c = 1, $w = count($weeks) - 1; $c < count($row_cells); $c++, $w--)
                 {
                     if($weeks[$w])
                     {
-                        $weeks[$w]['values'][$row_label] = $values[$v];
+                        $weeks[$w]['values'][$row_label] = $row_cells[$c];
+                        $values[$row_label] = floatval($values[$row_label]) + floatval($row_cells[$c]);
                     }
                 }
             }
         }
     }
-    
-    // Note the current week.
-    $week = $weeks[0];
-    $values = $week['values'];
     
 ?>
 <!DOCTYPE html>
