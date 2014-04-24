@@ -126,7 +126,7 @@
         <tr>
             <td class="warzone" colspan="3">
                 <h2>Days kitchen has been declared a disaster zone:</h2>
-                <p>14</p><!--# of times kitchen looks like a declared disaster zone (M-F only)-->
+                <p><?= yesno($values['# of times kitchen looks like a declared disaster zone (M-F only)']) ?></p><!--# of times kitchen looks like a declared disaster zone (M-F only)-->
             </td>
         </tr>
 
