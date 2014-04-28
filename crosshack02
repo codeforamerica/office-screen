@@ -4,15 +4,15 @@
 <head>
 	<!--
 	
-	    After two minutes, head on over to CrossHack02 screen
+	    After two minutes, head on over to Kitchen Stories.
 	
 	-->
-	<meta http-equiv="refresh" content="120; url=http://ainsleywagon.com/crosshack2.html">
+	<meta http-equiv="refresh" content="120; url=kitchen-stories.html">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>The Chillest Monkey</title>
+	<title>CrossHack02</title>
 </head>
 <frameset rows="*, 40" border="0">
-<frame frameborder="0" scrolling="no" src="http://www.chillestmonkey.com">
+<frame frameborder="0" scrolling="no" src="http://ainsleywagon.com/crosshack2">
 <frame frameborder="0" scrolling="no" src="footer.html">
 </frameset>
 </html>
