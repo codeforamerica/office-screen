@@ -7,11 +7,9 @@ of the time, but there are other relevant things to add to the rotation.
 
 These are them.
 
-
-Kitchen Stories Dashboard
+Rotation
 ----
-
-The source code for the "kitchen stories" dashboard can be found on the [kitchen-stories branch](https://github.com/codeforamerica/office-screen/tree/kitchen-stories).
+Index > Tweetbeam > CfA Project Monitor > Chillest Monkey > CfA Website Dashboard > SNAP status > Ducksboard > Tweetbeam
 
 Contributing
 ----
