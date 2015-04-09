@@ -9,7 +9,8 @@ These are them.
 
 Rotation
 ----
-Index > Tweetbeam > CfA Project Monitor > Chillest Monkey > CfA Website Dashboard > SNAP status > Ducksboard >  CfA Org Metrics > Tweetbeam
+Index ⟶ Tweetbeam ⟶ CfA Project Monitor ⟶ Serene Dog ⟶ CfA Website Dashboard ⟶ Health Ducksboard ⟶ CfA Org Metrics ↩
+
 
 Contributing
 ----
