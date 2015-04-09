@@ -9,7 +9,14 @@ These are them.
 
 Rotation
 ----
-Index ⟶ Tweetbeam ⟶ CfA Project Monitor ⟶ Serene Dog ⟶ CfA Website Dashboard ⟶ Health Ducksboard ⟶ CfA Org Metrics ↩
+Index 
+⟶ [Tweetbeam](http://codeforamerica.github.io/office-screen/tweetbeam.html)
+⟶ [CfA Project Monitor](http://codeforamerica.github.io/office-screen/project-monitor.html)
+⟶ [Serene Dog](http://codeforamerica.github.io/office-screen/serene-dog.html)
+⟶ [CfA Website Dashboard](http://codeforamerica.github.io/office-screen/website-dashboard.html)
+⟶ [Health Ducksboard](http://codeforamerica.github.io/office-screen/ducksboard.html)
+⟶ [CfA Org Metrics](http://codeforamerica.github.io/office-screen/org-metrics.html)
+↩
 
 
 Contributing
