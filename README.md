@@ -17,6 +17,7 @@ Index
 ⟶ [Health Ducksboard](http://codeforamerica.github.io/office-screen/ducksboard.html)
 ⟶ [CfA Org Metrics](http://codeforamerica.github.io/office-screen/org-metrics.html)
 ⟶ [CfA Current Goals](http://codeforamerica.github.io/office-screen/current-events.html)
+⟶ [CfA Fellowship Stats](http://codeforamerica.github.io/office-screen/fellow-dashboard.html)
 ↩
 
 
