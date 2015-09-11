@@ -20,6 +20,7 @@ Index
 ⟶ [CfA Fellowship Stats](http://codeforamerica.github.io/office-screen/fellow-dashboard.html)
 ⟶ [Got Issues](http://codeforamerica.github.io/office-screen/gotissues.html)
 ⟶ [Brigade Attendance](http://codeforamerica.github.io/office-screen/attendance.html)
+⟶ [Civic Tech Movement Numbers](http://codeforamerica.github.io/office-screen/brigade-numbers.html)
 ↩
 
 
