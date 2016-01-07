@@ -13,9 +13,7 @@ Index
 ⟶ [Tweetbeam](http://codeforamerica.github.io/office-screen/tweetbeam.html)
 ⟶ [CfA Project Monitor](http://codeforamerica.github.io/office-screen/project-monitor.html)
 ⟶ [CfA Flag](http://codeforamerica.github.io/office-screen/cfaflag.html)
-⟶ [CfA Website Dashboard](http://codeforamerica.github.io/office-screen/website-dashboard.html)
 ⟶ [Health Ducksboard](http://codeforamerica.github.io/office-screen/ducksboard.html)
-⟶ [CfA Org Metrics](http://codeforamerica.github.io/office-screen/org-metrics.html)
 ⟶ [Civic Tech Movement Numbers](http://codeforamerica.github.io/office-screen/brigade-numbers.html)
 ↩
 
