@@ -15,7 +15,6 @@ Index
 ⟶ [CfA Flag](http://codeforamerica.github.io/office-screen/cfaflag.html)
 ⟶ [CfA Website Dashboard](http://codeforamerica.github.io/office-screen/website-dashboard.html)
 ⟶ [Health Ducksboard](http://codeforamerica.github.io/office-screen/ducksboard.html)
-⟶ [CfA Org Metrics](http://codeforamerica.github.io/office-screen/org-metrics.html)
 ⟶ [Issue Finder Analytics](http://codeforamerica.github.io/office-screen/issuefinderanalytics.html)
 ⟶ [Brigade Attendance](http://codeforamerica.github.io/office-screen/attendance.html)
 ↩
