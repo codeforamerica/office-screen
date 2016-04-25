@@ -9,12 +9,13 @@ These are them.
 
 Rotation
 ----
-Index 
+Index
 ⟶ [Tweetbeam](http://codeforamerica.github.io/office-screen/tweetbeam.html)
 ⟶ [CfA Project Monitor](http://codeforamerica.github.io/office-screen/project-monitor.html)
 ⟶ [CfA Flag](http://codeforamerica.github.io/office-screen/cfaflag.html)
 ⟶ [Health Ducksboard](http://codeforamerica.github.io/office-screen/ducksboard.html)
 ⟶ [Civic Tech Movement Numbers](http://codeforamerica.github.io/office-screen/brigade-numbers.html)
+⟶ [CfA.org Availability Monitor](https://rpm.newrelic.com/public/charts/gpMkZsxIz8F)
 ↩
 
 
